@@ -35,8 +35,8 @@ h4{
 	font-weight: 900;
 	background-color: #1E90FF;
 	color: white;
-	padding: 2px 10px 2px 0px;
-	position:relative;
+	padding: 2px 10px 2px 5px;
+	position: relative;
 	flex: auto;
 }
 h5{
@@ -46,6 +46,8 @@ h5{
 	padding: 10px 0px 10px 10px;
 	margin-top: 0px;
 	margin-bottom: 10px;
+	vertical-align: middle;
+	width: 1150px;
 }
 main{
 	margin: 0;
@@ -93,9 +95,9 @@ section>.content{
 
 }
 section>#flex-box{
-	flex: auto;
+	flex: none;
 	margin-right: 25px;
-	width: 900px;
+	margin-bottom: -50px;
 }
 article{
 	display: flex;
@@ -129,6 +131,10 @@ article>#flex-content{
 }
 #box{
 	margin-bottom: 30px;
+}
+#center-box{
+	margin: 0px auto;
+	width: 1180px;
 }
 #denominator{
 	bottom: -5px;
@@ -179,9 +185,8 @@ article>#flex-content{
 	height: 45px;
 	margin-top: -10px;
 	margin-bottom: -10px;
-	position:absolute;
-	right:0px;
 	width: 80px;
+
 }
 #img-small{
 	height: 30px;
@@ -205,8 +210,18 @@ article>#flex-content{
 
 	}
 	article>#flex-content{
-		width: 70%;
+		width: 90%;
 		margin-bottom: -90px;
+	}
+	section>#flex-box{
+		width: 90%;
+	}
+	#center-box
+	{
+		width: 90%;
+	}
+	h5{
+		width: 100%;
 	}
 }
 @media (max-width: 500px){
@@ -215,13 +230,19 @@ article>#flex-content{
 		margin-bottom: -30px;
 	}
 	article>#flex-content{
-		width: 80%;
+		width: 90%;
 		margin-bottom: -70px;
+	}
+	section>#flex-box{
+		width: 90%;
 	}
 	h1{
 		font-size: xx-small;
 	}
 	logo-span{
 		font-size: xx-small;
+	}
+	.content table{
+		width: 90%;
 	}
 }
